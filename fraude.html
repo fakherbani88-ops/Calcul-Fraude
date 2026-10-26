@@ -118,10 +118,10 @@ function calculateFraudRisk() {
     // Nettoyage des classes de couleur
     resultDiv.className = 'result-box';
 
-    if (score < 35) {
+    if (score < 3.5) {
         resultDiv.classList.add('safe');
         levelDiv.innerText = 'Niveau de Risque : FAIBLE';
-    } else if (score < 65) {
+    } else if (score < 6.5) {
         resultDiv.classList.add('warning');
         levelDiv.innerText = 'Niveau de Risque : MODÉRÉ / SUSPECT';
     } else {
